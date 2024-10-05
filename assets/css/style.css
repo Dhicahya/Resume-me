@@ -1212,3 +1212,38 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+.skill-logo img {
+  width: 100px; /* Ukuran lebar gambar */
+  height: 100px; /* Ukuran tinggi gambar */
+  object-fit: contain; /* Menjaga proporsi gambar */
+  margin-bottom: 10px; /* Jarak antara gambar dan teks */
+  transition: transform 0.3s; /* Efek transisi pada hover */
+}
+
+/* Efek hover untuk gambar */
+.skill-logo img:hover {
+  transform: scale(1.1); /* Perbesar gambar saat dihover */
+}
+
+/* Menyelaraskan teks di bawah gambar */
+.skill-logo p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Pengaturan responsif untuk menyesuaikan layout */
+@media (max-width: 768px) {
+  .skill-logo img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .skill-logo img {
+    width: 60px;
+    height: 60px;
+  }
+}
